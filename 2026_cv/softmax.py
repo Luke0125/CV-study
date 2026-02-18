@@ -11,7 +11,6 @@ def softmax_loss_vectorized(W, x, y, reg):
 
     return loss, dW
     '''
-    def softmax_loss_vectorized(W, x, y, reg):
     loss = 0.0
     dW = np.zeros_like(W)
 
