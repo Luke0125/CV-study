@@ -35,7 +35,7 @@ def softmax_loss_vectorized(W, x, y, reg):
     scores = np.dot(x, W) # (500, 10)
     # axis=1에 해당하는 column을 축소하면서 진행해라!(column 방향으로 진행하라!) -> 같은 행 중 최댓값을 찾아라!
     scores -= np.max(scores, axis=1, keepdims=True) # (500, 1)
-    print(scores.shape)
+    print(np.max(scores, axis=1, keepdims=True).shape)
 
 
 
